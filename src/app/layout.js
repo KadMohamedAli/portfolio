@@ -1,13 +1,16 @@
 import './globals.css';
 
+export const metadata = {
+  title: 'My Portfolio',
+  description: 'Mohamed Ali Kaddour - Portfolio',
+};
 
 export default function RootLayout({ children }) {
-    return (
-      <html lang="en">
-        <body className="min-h-screen bg-gray-100 text-gray-800 font-sans">
-          {children}
-        </body>
-      </html>
-    );
-  }
-  
+  return (
+    <html lang="en">
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}

@@ -1,18 +1,34 @@
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client';
+
+import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import LanguageDropdown from './LanguageDropdown';
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const t = useTranslations('Header');
+
+  // Get the locale directly from the URL path (e.g. /en/ or /fr/)
+  const locale = pathname.split('/')[1]; // Extract the first segment of the path
+
+  // Define the available languages directly here
+  const availableLanguages = [
+    { code: 'en', name: t('languages.english') },
+    { code: 'fr', name: t('languages.french') },
+  ];
 
   return (
-    <nav className="bg-white shadow p-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold">KADDOUR Mohamed Ali</h1>
-      <div className="space-x-4">
-        <Link href="/" className={pathname === "/" ? "text-blue-600 font-semibold" : "hover:text-blue-600"}>Home</Link>
-        <Link href="/projects" className={pathname === "/projects" ? "text-blue-600 font-semibold" : "hover:text-blue-600"}>Projects</Link>
-        <Link href="/about" className={pathname === "/about" ? "text-blue-600 font-semibold" : "hover:text-blue-600"}>About</Link>
+    <header className="bg-gray-800 text-white py-4">
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        {/* Logo or Brand Name */}
+        <div className="text-2xl font-bold">
+          <a href="/">{t('brand')}</a>
+        </div>
+
+        {/* Language Dropdown */}
+        <LanguageDropdown locale={locale} availableLanguages={availableLanguages} />
       </div>
-    </nav>
+    </header>
   );
 }

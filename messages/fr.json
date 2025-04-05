@@ -1,0 +1,48 @@
+{
+  "Home": {
+    "intro": {
+      "name": "Mohamed Ali Kaddour",
+      "title": "Développeur Full-stack",
+      "location": "Algérie"
+    },
+    "contact": {
+      "phone": "+213 696181641",
+      "email": "kaddour.mohamed.ali.31@gmail.com",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "summary": {
+      "title": "Résumé",
+      "content": "Je suis un développeur passionné avec de l'expérience en développement mobile et web."
+    },
+    "projects": {
+      "title": "Projets",
+      "game": {
+        "title": "Jeu Vidéo 3D",
+        "tech": "Unreal Engine, Blender",
+        "description": "Un jeu créé avec Unreal Engine 5."
+      },
+      "mealApp": {
+        "title": "Application de Planification de Repas",
+        "tech": "React, Node.js, Firebase",
+        "description": "Une application pour gérer la planification des repas et des recettes."
+      },
+      "auctionApp": {
+        "title": "Application d'Enchères",
+        "tech": "Spring Boot, WebSocket",
+        "description": "Une application d'enchères en temps réel."
+      }
+    },
+    "footer": {
+      "text": "© {year} Mohamed Ali Kaddour. Tous droits réservés."
+    }
+  },
+  "Header": {
+    "brand": "Mon Portfolio",
+    "language": "Langue",
+    "languages": {
+      "english": "Anglais",
+      "french": "Français"
+    }
+  }
+}
