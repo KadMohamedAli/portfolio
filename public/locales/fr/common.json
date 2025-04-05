@@ -1,0 +1,15 @@
+{
+  "title": "Mon Portfolio",
+  "home": {
+    "title": "Bienvenue sur mon portfolio",
+    "description": "Je suis un développeur et designer."
+  },
+  "projects": {
+    "title": "Projets",
+    "description": "Voici quelques projets sur lesquels j'ai travaillé."
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "N'hésitez pas à me contacter !"
+  }
+}
